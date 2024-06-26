@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+  <script>
+    function mobile (name,brand,processor,price){
+        this.name = name;
+        this.brand = brand;
+        this.processor = processor;
+        this.price = price;
+    }
+
+    let m1 = new mobile("iphone 13","Apple","a14",55000);
+    let m2 = new mobile("iphone 14","Apple","a14",65000);
+    let m3 = new mobile("galaxy m13","samsung","exynos",25000);
+    let m4 = new mobile("moto edge 40","Motorola","snapdragen",35000);
+    let m5 = new mobile("oppo f17 pro","Oppo","Mediatech",25000);
+
+    let mobiles = [m1,m2,m3,m4,m5];
+
+    for (let m of mobiles){
+        if (m.price>30000){
+        for (let key in m){
+            document.write(key+":"+m[key]+"<br>")
+        }
+    }
+}
+    
+
+  </script>  
+</body>
+</html>

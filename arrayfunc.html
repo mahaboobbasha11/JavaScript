@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        function person(name,age,location){
+            this.name = name;
+            this.age = age;
+            this.location = location;
+        }
+
+        let p1 = new person("basha",22,"kurnool");
+        let p2 = new person("arjun",25,"hyderabad");
+        let p3 = new person("vicky",24,"yemmiganur");
+            let persons = [p1,p2,p3];
+
+        document.write(p2.location + "<br>"); // prints wanted element
+
+        for (let p of persons){ // to print all elements
+       
+
+        for (let key in p){
+        document.write(key+":"+p[key]+"<br>"); // prints whole person elements
+        }}
+
+       
+        document.write("<br>")
+    
+    </script>
+</body>
+</html>
